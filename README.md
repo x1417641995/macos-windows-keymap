@@ -1,8 +1,8 @@
-# mac-setup
+# macos-windows-keymap
 
-整理舊 Mac 的鍵盤與 f.lux 設定，供日後在其他 Mac 上下載還原。
+Windows-style keyboard shortcuts and input switching for macOS, powered by Karabiner-Elements.
 
-這份 repo 目前以 **macOS 設定備份**為主；Karabiner JSON 不能直接套用到 Windows。
+透過 Karabiner-Elements，讓 macOS 的快捷鍵與中英輸入切換更符合 Windows 使用習慣，供其他 Mac 下載還原。另保留 f.lux 的個人偏好設定作為附加記錄。
 
 ## 內容
 
@@ -10,7 +10,7 @@
 | --- | --- |
 | [karabiner/](karabiner/) | 可匯入 Karabiner 的 8 條 Complex Modifications JSON |
 | [docs/keyboard-layout.md](docs/keyboard-layout.md) | Fn／Cmd／Ctrl 對調，以及鍵盤還原時需要注意的事項 |
-| [docs/f-lux.md](docs/f-lux.md) | 從 Word 整理出的 f.lux 設定 |
+| [docs/f-lux.md](docs/f-lux.md) | 附加記錄：f.lux 個人偏好設定 |
 
 ## 鍵盤規則
 
@@ -23,7 +23,7 @@
 | [03-vscode-go-forward.json](karabiner/03-vscode-go-forward.json) | 左 Option + → → Ctrl + Shift + - | 全域；名稱以 VS Code 前進功能為例 |
 | [04-vscode-go-back.json](karabiner/04-vscode-go-back.json) | 左 Option + ← → Ctrl + - | 全域；名稱以 VS Code 返回功能為例 |
 | [05-f5-teams-mic.json](karabiner/05-f5-teams-mic.json) | F5 → Cmd + Shift + M，原用途為 Teams 麥克風 | 全域；沒有 Teams 限定條件 |
-| [06-ctrl-tab-switch-windows.json](karabiner/06-ctrl-tab-switch-windows.json) | 左 Ctrl + Tab → Cmd + Tab | 全域；舊設定記錄為未啟用 |
+| [06-ctrl-tab-switch-apps.json](karabiner/06-ctrl-tab-switch-apps.json) | 左 Ctrl + Tab → Cmd + Tab，切換 App | 全域；舊設定記錄為未啟用 |
 | [07-left-shift-en-zh.json](karabiner/07-left-shift-en-zh.json) | 單按左 Shift → Ctrl + Space | 全域 |
 | [08-right-shift-en-zh.json](karabiner/08-right-shift-en-zh.json) | 單按右 Shift → Ctrl + Space | 全域 |
 
@@ -34,8 +34,8 @@
 先從 GitHub 下載 ZIP 並解壓縮，或在終端機執行以下指令。私人 repo 需要先登入有存取權限的 GitHub 帳號。
 
 ```sh
-git clone https://github.com/x1417641995/mac-setup.git
-cd mac-setup
+git clone https://github.com/x1417641995/macos-windows-keymap.git
+cd macos-windows-keymap
 ```
 
 1. 準備好 Karabiner-Elements，再依[鍵盤配置](docs/keyboard-layout.md)決定是否還原實體鍵對調。

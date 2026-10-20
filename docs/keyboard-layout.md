@@ -23,9 +23,9 @@
 ## 還原時需要確認
 
 - 舊設定明確記錄規則 06 關閉；沒有其他規則的實際啟用狀態紀錄。
-- 規則 06 輸出的是 Cmd + Tab；原檔名稱寫「switch windows」，還原時應以實際輸出的快捷鍵為準。
+- 規則 06 輸出的是 Cmd + Tab，用於切換 App；檔名為 `06-ctrl-tab-switch-apps.json`。
 - 03、04 沒有 VS Code 限定條件；05 沒有 Teams 限定條件，會在其他 App 中送出相同快捷鍵。
 - 07、08 輸出 Ctrl + Space。是否在英文與中文間切換，取決於目標 Mac 的輸入來源與快捷鍵設定。
 - 目前沒有完整 profile、裝置識別資訊、macOS 版本、Karabiner 版本或輸入法清單，不能從現有檔案自動重建這些資訊。
 
-`karabiner/` 保留原始 JSON 的規則內容。
+`karabiner/` 保留原始規則的鍵盤映射行為。
