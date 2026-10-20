@@ -1,0 +1,29 @@
+{
+    "title": "Tap Right Shift alone to switch EN/ZH",
+    "rules": [
+        {
+            "description": "Tap Right Shift alone to switch EN/ZH (Ctrl + Space)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "right_shift",
+                        "modifiers": { "optional": ["any"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_shift",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": ["left_control"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "title": "Left Control + Tab to switch windows",
+    "rules": [
+        {
+            "description": "Left Control + Tab to switch windows (physical command key position)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "tab",
+                        "modifiers": { "mandatory": ["left_control"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": ["command"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

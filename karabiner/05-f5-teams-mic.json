@@ -1,0 +1,20 @@
+{
+    "title": "F5 to toggle Teams microphone",
+    "rules": [
+        {
+            "description": "F5 to toggle Teams microphone (Cmd + Shift + M)",
+            "manipulators": [
+                {
+                    "from": { "key_code": "f5" },
+                    "to": [
+                        {
+                            "key_code": "m",
+                            "modifiers": ["left_command", "left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

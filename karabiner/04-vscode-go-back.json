@@ -1,0 +1,23 @@
+{
+    "title": "VSCode: Option + Left Arrow to Go Back",
+    "rules": [
+        {
+            "description": "VSCode: Option + Left Arrow to Go Back (like Windows Alt + Left)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": { "mandatory": ["left_option"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyphen",
+                            "modifiers": ["left_control"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

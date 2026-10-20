@@ -1,0 +1,23 @@
+{
+    "title": "VSCode: Option + Right Arrow to Go Forward",
+    "rules": [
+        {
+            "description": "VSCode: Option + Right Arrow to Go Forward (like Windows Alt + Right)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": { "mandatory": ["left_option"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyphen",
+                            "modifiers": ["left_control", "left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

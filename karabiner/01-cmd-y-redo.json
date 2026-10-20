@@ -1,0 +1,23 @@
+{
+    "title": "Cmd + Y to Redo (Windows-style)",
+    "rules": [
+        {
+            "description": "Cmd + Y to Redo (like Windows Ctrl + Y)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "y",
+                        "modifiers": { "mandatory": ["left_command"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z",
+                            "modifiers": ["left_command", "left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
