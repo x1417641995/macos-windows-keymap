@@ -1,31 +1,35 @@
-# 鍵盤配置還原記錄
+# Keyboard layout
 
-依舊鍵盤設定的 README 整理。這些對調需要手動設定，沒有包含在 `karabiner/` 的 8 個 JSON 檔內。
+**English** | [繁體中文](keyboard-layout.zh-TW.md)
+
+These optional mappings were documented in the original keyboard setup. Configure them manually in Karabiner Simple Modifications; they are not included in the eight JSON files in `karabiner/`.
 
 ## Simple Modifications
 
-舊設定的對象是 **Apple Internal Keyboard / Trackpad**，不是所有外接鍵盤。
+The original setup applied these mappings to the **Apple Internal Keyboard / Trackpad**, rather than to every external keyboard.
 
-| 原按鍵 | 轉換後 |
+| From | To |
 | --- | --- |
-| `fn`（地球鍵） | `left_command` |
+| `fn` (Globe) | `left_command` |
 | `left_command` | `left_control` |
-| `left_control` | `fn`（地球鍵） |
+| `left_control` | `fn` (Globe) |
 
-若要重現原先手感，在目標 Mac 的 Karabiner Simple Modifications 中，針對內建鍵盤手動設定上述對應。若使用外接鍵盤，先確認其實際鍵位與裝置，不直接假設配置相同。
+To reproduce the original physical layout, add these three mappings for the built-in keyboard in Karabiner's Simple Modifications. Check the actual device and key positions before using the same layout on an external keyboard.
 
-依舊設定記錄，Simple Modifications 先於 Complex Modifications 生效。因此，套用上述配置後：
+Karabiner applies Simple Modifications before Complex Modifications. With the mappings above:
 
-- 規則 01 的邏輯左 Cmd + Y，由實體 Fn + Y 觸發。
-- 規則 06 的邏輯左 Ctrl + Tab，由實體左 Cmd + Tab 觸發，並送出 Cmd + Tab。
-- 左 Option、右 Option、F5 與 Shift 不在上述三個對調按鍵之內。
+- Rule 01's logical Left Cmd + Y is triggered by physical Fn + Y.
+- Rule 06's logical Left Ctrl + Tab is triggered by physical Left Cmd + Tab and sends Cmd + Tab.
+- Left Option, Right Option, F5, and Shift are unaffected by this three-key remapping.
 
-## 還原時需要確認
+Without these Simple Modifications, the rules use the standard physical keys shown in the main README.
 
-- 舊設定明確記錄規則 06 關閉；沒有其他規則的實際啟用狀態紀錄。
-- 規則 06 輸出的是 Cmd + Tab，用於切換 App；檔名為 `06-ctrl-tab-switch-apps.json`。
-- 03、04 沒有 VS Code 限定條件；05 沒有 Teams 限定條件，會在其他 App 中送出相同快捷鍵。
-- 07、08 輸出 Ctrl + Space。是否在英文與中文間切換，取決於目標 Mac 的輸入來源與快捷鍵設定。
-- 目前沒有完整 profile、裝置識別資訊、macOS 版本、Karabiner 版本或輸入法清單，不能從現有檔案自動重建這些資訊。
+## Before enabling rules
 
-`karabiner/` 保留原始規則的鍵盤映射行為。
+- Rule 06 was explicitly left disabled in the original setup. The enabled states of the other rules were not exported.
+- Rule 06 sends Cmd + Tab to switch apps; its filename is `06-ctrl-tab-switch-apps.json`.
+- Rules 03 and 04 are not restricted to VS Code. Rule 05 is not restricted to Teams. They send the same shortcuts in other apps.
+- Rules 07 and 08 send Ctrl + Space. The input sources and shortcut configured on your Mac determine whether this switches between English and Chinese.
+- A complete profile, device identifiers, original macOS and Karabiner versions, and an input method list are not available, so these cannot be reconstructed automatically.
+
+The files in `karabiner/` preserve the original keyboard mapping behavior.

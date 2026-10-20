@@ -1,22 +1,24 @@
-# f.lux 設定記錄
+# f.lux preferences
 
-依舊 Mac 的 `f.lux.docx` 整理。以下是舊 Mac 的設定記錄，供新電腦手動還原時參考。
+**English** | [繁體中文](f-lux.zh-TW.md)
 
-| 項目 | 記錄值 |
+Optional personal preferences transcribed from the original Mac's `f.lux.docx`. Use these as a reference for manual restoration; they are independent of the keyboard rules.
+
+| Setting | Recorded value |
 | --- | --- |
-| 白天色溫 | 4900 K |
-| 日落後色溫 | 4900 K |
-| 睡前色溫 | 3400 K |
-| 起床時間 | 08:00 |
-| 當時 f.lux 版本 | 42.2 |
-| 當時執行狀態 | 正在執行 |
-| 登入時自動啟動 | 已允許 |
-| 地點 | 文件指出設定檔沒有保存可辨識的地點資訊 |
+| Daytime temperature | 4900 K |
+| After-sunset temperature | 4900 K |
+| Bedtime temperature | 3400 K |
+| Wake time | 08:00 |
+| f.lux version at the time | 42.2 |
+| App status at the time | Running |
+| Launch at login | Allowed |
+| Location | No identifiable location information was recorded in the settings, according to the source document |
 
-白天與日落後的色溫相同，依文件描述，主要在睡前才明顯變暖。
+Daytime and after-sunset temperatures are identical. The source document describes a noticeable shift toward warmer colors mainly at bedtime.
 
-## 手動還原
+## Manual restoration
 
-在目標電腦的 f.lux 中，分別設定白天、日落後、睡前色溫及 08:00 起床時間，再啟用登入時自動啟動。地點資訊需要在目標電腦另外確認。
+In f.lux on your target computer, set the three color temperatures and the 08:00 wake time, then enable launch at login. Configure the location separately for that computer.
 
-文件沒有提供可匯入的原生設定檔、完整排程、時區或其他偏好設定；無法僅憑這份文件保證完全重現舊 Mac 的過渡時間與顯示效果。版本 42.2 是歷史記錄，並非安裝版本要求。
+The source document does not include an importable preferences file, a complete schedule, a timezone, or other preferences. It cannot fully reproduce the old Mac's transition timing or display appearance. Version 42.2 is a historical record, not an installation requirement.
