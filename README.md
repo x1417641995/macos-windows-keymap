@@ -32,6 +32,13 @@
 
 ## 在 Mac 還原
 
+先從 GitHub 下載 ZIP 並解壓縮，或在終端機執行以下指令。私人 repo 需要先登入有存取權限的 GitHub 帳號。
+
+```sh
+git clone https://github.com/x1417641995/mac-setup.git
+cd mac-setup
+```
+
 1. 準備好 Karabiner-Elements，再依[鍵盤配置](docs/keyboard-layout.md)決定是否還原實體鍵對調。
 2. 在此 repo 根目錄執行下面的指令，只複製需要的規則。目的地若有同名檔，`cp -i` 會先詢問。
 3. 在 Karabiner 的 Complex Modifications 中新增並啟用需要的規則。原 README 記載規則 06 未啟用，其餘規則的實際啟用狀態沒有匯出紀錄。
